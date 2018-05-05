@@ -37,6 +37,8 @@
     // Subtract the first input number of days from the second input number of days for the months.
     function monthsToDays() {
         // set days for each month: September, April, June, and November have 30 and the rest have 31.
+        // add previous month days to each month afterwards to calculate all the months to that point.
+        // Ex, May would be Jan, Feb, Mar, Apr, and May total of days.
         switch (monthOne) {
             case 01:
                 baseLine += 31;
